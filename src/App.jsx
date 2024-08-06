@@ -1,10 +1,10 @@
 import React, { useState, useEffect, Suspense } from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero'; 
-import About from './components/About';
-import Projects from './components/Projects';
-import Contacts from './components/Contacts';
-import Footer from './components/Footer';
+// import Header from './components/Header';
+// import Hero from './components/Hero'; 
+// import About from './components/About';
+// import Projects from './components/Projects';
+// import Contacts from './components/Contacts';
+// import Footer from './components/Footer';
 import Loading from './components/Loading';
 // import { Navbar, Nav, Button } from 'react-bootstrap';
 import { MdOutlineLightMode } from "react-icons/md";
@@ -39,19 +39,14 @@ useEffect(()=>{
   document.body.style.color = changeColor
 })
 
+
+const Body = React.lazy(() => import('./Body.jsx'));
   
 
   return (
     <div>
-      <Suspense fallback={<Loading/>}>
-      <Header colorChange={colorChange} bgcolor={changeColor} color={changeBackgroundColor} />
-      <Hero bgcolor={changeColor} color={changeBackgroundColor}/>
-      <About border={changeColor}/>
-      <Skills bgcolor={changeColor} color={changeBackgroundColor}/>
-
-      <Projects />
-      <Contacts />
-      <Footer />
+      <Suspense fallback={<Loading />}>
+      <Body />
       </Suspense>
     </div>
   );
