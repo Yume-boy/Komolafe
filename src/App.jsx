@@ -10,13 +10,15 @@ import Loading from './components/Loading';
 import { MdOutlineLightMode } from "react-icons/md";
 import { MdNightlight } from "react-icons/md";
 import Skills from './components/Skills';
+// import Body from './components/Body';
 
 const App = () => {
   // const [darkMode, setDarkMode] = useState(true);
 
   const [changeBackgroundColor, setChangeBackgroundColor] = useState('#000000')
   const [changeColor, setChangeColor] = useState('#f5f4f4')
-
+  
+  const Body = React.lazy(() => import('./components/Body'));
 const colorChange = () => {
   if (changeBackgroundColor == '#000000' && changeColor == '#f5f4f4' ) {
     setChangeBackgroundColor('#f5f4f4')
@@ -28,11 +30,8 @@ const colorChange = () => {
 
 }
 
-
-
 // const [show, setShow] = useState('d-none d-md-none d-lg-none')
 
-  
 
 useEffect(()=>{
   document.body.style.backgroundColor = changeBackgroundColor
@@ -40,12 +39,10 @@ useEffect(()=>{
 })
 
 
-const Body = React.lazy(() => import('./Body.jsx'));
-  
 
   return (
     <div>
-      <Suspense fallback={<Loading />}>
+      <Suspense fallback={<Loading />} fallbackMinDurationMs={3000}>
       <Body />
       </Suspense>
     </div>

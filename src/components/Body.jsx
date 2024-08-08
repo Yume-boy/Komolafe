@@ -1,13 +1,29 @@
 import React from 'react'
-import Header from './components/Header';
-import Hero from './components/Hero'; 
-import About from './components/About';
-import Projects from './components/Projects';
-import Contacts from './components/Contacts';
-import Footer from './components/Footer';
-import Skills from './components/Skills';
+import Header from './Header';
+import Hero from './Hero'; 
+import About from './About';
+import Projects from './Projects';
+import Contacts from './Contacts';
+import Footer from './Footer';
+import Skills from './Skills';
+import { useState } from 'react';
 
 const Body = () => {
+
+  const [changeBackgroundColor, setChangeBackgroundColor] = useState('#000000')
+  const [changeColor, setChangeColor] = useState('#f5f4f4')
+
+  const colorChange = () => {
+    if (changeBackgroundColor == '#000000' && changeColor == '#f5f4f4' ) {
+      setChangeBackgroundColor('#f5f4f4')
+      setChangeColor('#000000')
+    } else {
+      setChangeBackgroundColor('#000000')
+      setChangeColor('#f5f4f4')
+    }
+  
+  }
+
   return (
     <div>
       <Header colorChange={colorChange} bgcolor={changeColor} color={changeBackgroundColor} />
