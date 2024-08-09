@@ -6,7 +6,7 @@ import Projects from './Projects';
 import Contacts from './Contacts';
 import Footer from './Footer';
 import Skills from './Skills';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Body = () => {
 
@@ -23,6 +23,11 @@ const Body = () => {
     }
   
   }
+
+  useEffect(()=>{
+    document.body.style.backgroundColor = changeBackgroundColor
+    document.body.style.color = changeColor
+  })
 
   return (
     <div>
