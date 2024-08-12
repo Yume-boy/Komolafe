@@ -37,17 +37,17 @@ const Header = (props) => {
 
 
   return (
-    <nav className={`d-flex justify-content-between px-4 sticky-top nav py-3 align-items-center  ${isSticky ? 'sticky' : ''}`} >
+    <nav className={`d-flex justify-content-between px-4 sticky-top nav py-3 align-items-center  ${isSticky ? 'sticky' : ''}`}  >
       <div>
         <span className='logo '>MK</span>
       </div>
       <div className='d-none d-md-block'>
         <ul className='d-flex list-unstyled gap-5 align-items-center'>
-          <li><a href="#" className='text-decoration-none text-reset'>Home</a></li>
-          <li><a href="#" className='text-decoration-none text-reset'>About</a></li>
-          <li><a href="#" className='text-decoration-none text-reset'>Project</a></li>
-          <li><a href="#" className='text-decoration-none text-reset'>Skills</a></li>
-          <li><a href="#" className='text-decoration-none text-reset'>Contact</a></li>
+          <li><a href="#hero" className='text-decoration-none text-reset'>Home</a></li>
+          <li><a href="#about" className='text-decoration-none text-reset'>About</a></li>
+          <li><a href="#projects" className='text-decoration-none text-reset'>Project</a></li>
+          <li><a href="#skills" className='text-decoration-none text-reset'>Skills</a></li>
+          <li><a href="#contact" className='text-decoration-none text-reset'>Contact</a></li>
         </ul>
       </div>
       <div className='d-flex align-items-center'>

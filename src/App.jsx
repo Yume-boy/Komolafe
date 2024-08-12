@@ -12,6 +12,16 @@ import { MdNightlight } from "react-icons/md";
 import Skills from './components/Skills';
 // import Body from './components/Body';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init({
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: true,
+  easing: 'ease',
+  anchorPlacement: '', 
+});
+
 const App = () => {
   // const [darkMode, setDarkMode] = useState(true);
 
@@ -42,7 +52,8 @@ useEffect(()=>{
 
   return (
     <div>
-      <Suspense fallback={<Loading />} fallbackMinDurationMs={3000}>
+      <Suspense fallback={<Loading />} >
+      
       <Body />
       </Suspense>
     </div>

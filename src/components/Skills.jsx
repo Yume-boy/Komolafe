@@ -11,18 +11,18 @@ import { CiLink } from "react-icons/ci";
 
 const Skills = (props) => {
   return (
-    <div className='d-flex flex-column align-items-center skills px-4 my-5'>
-        <h2 className='mt-5'>
+    <div className='d-flex flex-column align-items-center skills px-4 my-5 '  id='skills'>
+        <h2 className='mt-5' data-aos="fade-right" data-aos-duration='1500'>
             Skills
         </h2>
-        <div className='mom'>
+        <div className='mom' data-aos="fade-left" data-aos-duration='1500'>
              <span className='underline'></span>
         </div>
-        <h4 className='mt-3'>
+        <h4 className='mt-3' data-aos="fade-right" data-aos-duration='1500'>
         With experience as a Frontend Developer, I specialize in crafting exceptional web experiences. Utilizing React.js, Material.ui, and Bubble.io, I've built dynamic websites and engaging applications, showcasing my proficiency in front-end development.
         </h4>
-        <p className='mt-4'>Visit my <a href="www.linkedin.com/in/marvellous-komolafe-8292821a9" className='text-reset'>linkedIn  <CiLink /></a> for more information</p>
-        <div className='stack gap-4'>
+        <p className='mt-4' data-aos="fade-left" data-aos-duration='1500'>Visit my <a href="www.linkedin.com/in/marvellous-komolafe-8292821a9" className='text-reset'>linkedIn  <CiLink /></a> for more information</p>
+        <div className='stack gap-4' data-aos="fade-right" data-aos-duration='1500'>
             <FaHtml5 />
             <FaCss3Alt />
             <IoLogoJavascript />
@@ -32,7 +32,7 @@ const Skills = (props) => {
             <SiMedusa />
             <FaWordpress />
         </div>
-        <span className='seperator mt-5'  style={{backgroundColor: `${props.bgcolor}`, color: `${props.color}`}}></span>    
+            
     </div>
   )
 }
