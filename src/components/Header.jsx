@@ -26,10 +26,10 @@ const Header = (props) => {
     }, []);
 
     const onButtonClick = () => {
-      const pdfUrl = "komolafe CV.pdf";
+      const pdfUrl = "Komolafe marvellous regular portfolio (1).pdf";
       const link = document.createElement("a");
       link.href = pdfUrl;
-      link.download = "Komolafe CV.pdf"; // specify the filename
+      link.download = "Komolafe CV .pdf"; // specify the filename
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);

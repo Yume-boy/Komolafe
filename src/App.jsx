@@ -16,7 +16,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
 AOS.init({
-  once: false, // whether animation should happen only once - while scrolling down
+  once: true, // whether animation should happen only once - while scrolling down
   mirror: true,
   easing: 'ease',
   anchorPlacement: '', 

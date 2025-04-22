@@ -4,7 +4,7 @@ import profilePic from './profilepic.jpg'
 
 const About = (props) => {
   return (
-    <div className='about row px-4 my-5' id='about'>
+    <div className='about row px-4 my-5 ' id='about'>
       <div className='col-12 col-md-8'  >
         <h2 data-aos="fade-right" data-aos-duration='2000'>About Me.</h2>
         <p data-aos="fade-right" data-aos-duration='2000'>Hey there!</p>

@@ -7,6 +7,7 @@ import Projects from './Projects';
 import Contacts from './Contacts';
 import Footer from './Footer';
 import Skills from './Skills';
+import Seperator from './Seperator'
 import { useState, useEffect, useRef } from 'react';
 
 const Body = () => {
@@ -76,8 +77,12 @@ const Body = () => {
       </div>
       <Header colorChange={colorChange} bgcolor={changeColor} color={changeBackgroundColor} />
       <Hero bgcolor={changeColor} color={changeBackgroundColor}/>
+      <Seperator color={changeBackgroundColor}/>
+      
       <About border={changeColor}/>
+      <Seperator/>
       <Skills bgcolor={changeColor} color={changeBackgroundColor}/>
+      <Seperator/>
       <Projects />
       <Contacts sendEmail={sendEmail} yesForm={form}/>
       <Footer />
