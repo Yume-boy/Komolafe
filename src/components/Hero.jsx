@@ -5,7 +5,7 @@ import hero from './Hero.gif'
 const Hero = (props) => {
   return (
     <div className='d-flex hero row mb-5  ' id='hero'>
-      <div className='col-12 col-md-7 hero-1'  data-aos="fade-right" data-aos-duration='2000'>
+      <div className='col-12 col-md-7 hero-1'  data-aos="fade-right" data-aos-duration='1000'>
         <h2 className='mb-3'>Front End Web developer</h2>
         <span className='experience px-2 rounded-pill py-1 '>
           Enhancing User Experience through seemless UI
@@ -16,7 +16,7 @@ const Hero = (props) => {
           <span className='px-3 rounded-pill d-flex align-items-center py-2 hire'>Projects</span>
         </div>
       </div>
-      <div className=' col-12 col-md-5 heroImg d-flex justify-content-center'  data-aos="fade-left" data-aos-duration='2000'> 
+      <div className=' col-12 col-md-5 heroImg d-flex justify-content-center'  data-aos="fade-left" data-aos-duration='1000'> 
         <img src={hero} alt="" className='rounded-circle'/>
       </div>
       {/* <span className='seperator mt-5'  style={{backgroundColor: `${props.bgcolor}`, color: `${props.color}`}}></span> */}

@@ -24,9 +24,9 @@ const Projects = () => {
 
   return (
    <div className='mx-3 p-4 projects '  id='projects'>
-    <h4 data-aos="fade-right" data-aos-duration='2000'>Projects.</h4>
-    <h5 data-aos="fade-right" data-aos-duration='2000'>Personal</h5>
-    <p className='mb-5' data-aos="fade-right" data-aos-duration='2000'>Swipe to scroll</p>
+    <h4 data-aos="fade-right" data-aos-duration='1000'>Projects.</h4>
+    <h5 data-aos="fade-right" data-aos-duration='1000'>Personal</h5>
+    <p className='mb-5' data-aos="fade-right" data-aos-duration='1000'>Swipe to scroll</p>
     <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -123,8 +123,8 @@ const Projects = () => {
         </SwiperSlide>
       </Swiper>
 
-      <h5 className=" my-5" data-aos="fade-right" data-aos-duration='2000'>Professional</h5>
-      <Container className="proof-of-work-section my-5  " data-aos="fade-right" data-aos-duration='2000'>
+      <h5 className=" my-5" data-aos="fade-right" data-aos-duration='1000'>Professional</h5>
+      <Container className="proof-of-work-section my-5  " data-aos="fade-right" data-aos-duration='1000'>
             <Carousel
             interval={3000}  // Adjust interval (in milliseconds) as needed
             indicators={false}  // Hide the slide indicators if not needed
