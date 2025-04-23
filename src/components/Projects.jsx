@@ -124,7 +124,7 @@ const Projects = () => {
       </Swiper>
 
       <h5 className=" my-5" data-aos="fade-right" data-aos-duration='1000'>Professional</h5>
-      <Container className="proof-of-work-section my-5  " data-aos="fade-right" data-aos-duration='1000'>
+      <Container className="proof-of-work-section my-5  ">
             <Carousel
             interval={3000}  // Adjust interval (in milliseconds) as needed
             indicators={false}  // Hide the slide indicators if not needed
@@ -136,7 +136,7 @@ const Projects = () => {
             >
             <Carousel.Item>
                 <Row xs={1} md={2} className="g-4">
-                <Col>
+                <Col data-aos="fade-right" data-aos-duration='1000'>
                     <Card className="work-card">
                     <Card.Img variant="top" src={'Skilltop-ims.PNG'} />
                     <Card.Body>
@@ -155,7 +155,7 @@ const Projects = () => {
                     </Card.Body>
                     </Card>
                 </Col>
-                <Col>
+                <Col data-aos="fade-left" data-aos-duration='1000'>
                     <Card className="work-card">
                     <Card.Img variant="top" src={'Skilltop-ehs.PNG'} />
                     <Card.Body>
