@@ -121,6 +121,15 @@ const Projects = () => {
             <h5>React.js-Redux-Github API</h5>
             <p>This is project that finds github account based on input and displays relevant information related to that account</p>
         </SwiperSlide>
+        <SwiperSlide>
+          <img src={'choreimage.PNG'} />
+           <div className='d-flex justify-content-between px-2 align-items-center'>
+              <h4>Choretrolly</h4>
+              <a href="https://chore-trolley.vercel.app/" className='text-reset'><FaExternalLinkAlt /></a>
+            </div>
+            <h5>Next.js-Redux-Github API</h5>
+            <p>This is a home management application that allows users to shp for grceries and book home management services ranging form home cleaning to laundry service booking</p>
+        </SwiperSlide>
       </Swiper>
 
       <h5 className=" my-5" data-aos="fade-right" data-aos-duration='1000'>Professional</h5>
@@ -168,6 +177,46 @@ const Projects = () => {
                           <li>Staff Management – Add, edit, and manage doctors, nurses, and administrative personnel.</li>
                           <li>Appointment Scheduling – Schedule and manage appointments between patients and doctors.</li>
                           <li className='mb-5'>Role-Based Access Control – Secure login with tailored views for Admin, Doctor, Nurse, and Receptionist roles.</li>
+                        </ul>
+                        </Card.Text>
+                        <a href="https://skilltopehs.com.ng/" className='text-reset'><FaExternalLinkAlt /></a>
+                    </Card.Body>
+                    </Card>
+                </Col>
+                <Col data-aos="fade-right" data-aos-duration='1000'>
+                    <Card className="work-card">
+                    <Card.Img variant="top" src={'carepointimage.PNG'} />
+                    <Card.Body>
+                        <Card.Title>Carepoint Health care</Card.Title>
+                        <Card.Text>
+                        <p>CarePoint Healthcare Solutions Ltd is a UK-based healthcare agency specialising in staffing and direct care provision for vulnerable populations. According to the website, they supply qualified healthcare staff to care homes, hospitals, and other care establishments while also offering personalised domiciliary (home) care services. </p>
+                        <h6>Key Features:</h6>
+                        <ul>
+                          <li>Developed a responsive, SEO-friendly website for a UK-based healthcare staffing and domiciliary care agency.</li>
+                          <li>Built using Next.js and Tailwind CSS for fast rendering and scalable front-end architecture.</li>
+                          <li>Implemented Framer Motion animations to add smooth transitions and subtle interactive effects across pages.</li>
+                          <li className='mb-5'>Designed an engaging hero section featuring a carousel that showcases care professionals and service highlights.</li>
+                        </ul>
+                        </Card.Text>
+                        <a href="https://skilltopehs.com.ng/" className='text-reset'><FaExternalLinkAlt /></a>
+                    </Card.Body>
+                    </Card>
+                </Col>
+                <Col data-aos="fade-left" data-aos-duration='1000'>
+                    <Card className="work-card">
+                    <Card.Img variant="top" src={'carepintadmin.PNG'} />
+                    <Card.Body>
+                        <Card.Title>Carepoint Admin App</Card.Title>
+                        <Card.Text>
+                        <p>A full-featured web application designed to streamline manage activities, enhance client management, and improve overall staff efficiency.</p>
+                        <h6>Key Features:</h6>
+                        <ul>
+                          <li>Client Management – Register, update, and track Client details with ease.</li>
+                          <li>HR Management – management of all HR activities ranging from staff managemnt to job posting, application management and Interview scheduling</li>
+                          <li>App Access management – manage access to staff mobile application.</li>
+                          <li>Staff Management – Add, edit, and manage doctors, nurses, and administrative personnel.</li>
+                          <li>Shift management – Schedule and manage shift between clients and staff.</li>
+                          <li className='mb-5'>Role-Based Access Control – Secure login with tailored views for Admin, super admin, and Hr roles.</li>
                         </ul>
                         </Card.Text>
                         <a href="https://skilltopehs.com.ng/" className='text-reset'><FaExternalLinkAlt /></a>

@@ -28,6 +28,17 @@ const Contacts = (props) => {
             <Button type="submit" className='mt-3' data-aos="fade-right" data-aos-duration='1000'>
               Send
             </Button>
+            {props.success && (
+                <p className="text-center mt-3" style={{ color: '#40BACA', fontWeight: 'bold' }}>
+                  ✅ Thank you! Your message has been sent.
+                </p>
+              )}
+
+              {props.errorerror && (
+                <p className="text-center mt-3" style={{ color: 'red', fontWeight: 'bold' }}>
+                  ❌ Oops! Something went wrong. Please try again.
+                </p>
+              )}
           </Form>
         </Container>
       </div>
