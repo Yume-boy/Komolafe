@@ -4,20 +4,20 @@ import { createContext, useContext, useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const ThemeContext = createContext({
-  theme: 'light',
+  theme: 'dark',
   toggleTheme: () => {},
 });
 
 export const useTheme = () => useContext(ThemeContext);
 
 export default function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
   const [isAnimating, setIsAnimating] = useState(false);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
-    const savedTheme = localStorage.getItem('theme') || 'light';
+    const savedTheme = localStorage.getItem('theme') || 'dark';
     setTheme(savedTheme);
     document.documentElement.classList.toggle('dark', savedTheme === 'dark');
   }, []);
@@ -26,7 +26,7 @@ export default function ThemeProvider({ children }) {
     setIsAnimating(true);
 
     setTimeout(() => {
-      const newTheme = theme === 'light' ? 'dark' : 'light';
+      const newTheme = theme === 'dark' ? 'light' : 'dark';
       setTheme(newTheme);
       localStorage.setItem('theme', newTheme);
       document.documentElement.classList.toggle('dark', newTheme === 'dark');
@@ -52,7 +52,8 @@ export default function ThemeProvider({ children }) {
             transition={{ duration: 0.8, ease: 'easeInOut' }}
             className="fixed inset-0 z-[9999] pointer-events-none"
             style={{
-              background: 'linear-gradient(90deg, transparent 0%, #3b82f6 50%, transparent 100%)',
+              background:
+                'linear-gradient(90deg, transparent 0%, #3b82f6 50%, transparent 100%)',
             }}
           />
         )}
