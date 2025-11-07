@@ -14,7 +14,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-darkColor">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden dark:bg-darkColor">
       <div className="absolute inset-0 bg-aboutHero bg-center lg:bg-right bg-no-repeat h-screen bg-cover lg:bg-[length:50%_auto]" />
 
       <div className="container mx-auto px-4 relative z-10">
