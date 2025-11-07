@@ -43,7 +43,7 @@ export default function Header() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300  ${
         isScrolled
           ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-md'
-          : 'bg-[#ffffff34] dark:bg-[#41414133] backdrop-blur-md shadow-md'
+          : 'bg-[#ffffffa6] dark:bg-[#41414133] backdrop-blur-md shadow-md'
       }`}
     >
       <nav className="container mx-auto px-4 py-4">
@@ -136,7 +136,7 @@ export default function Header() {
                   className="w-full justify-center"
                   asChild
                 >
-                  <a href="/Komolafe-CV.pdf" download>
+                  <a href="/Komolafe marvellous regular portfolio (5).pdf" download>
                     <Download className="mr-2 h-4 w-4" />
                     Resume
                   </a>
